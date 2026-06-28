@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bloom, Resin & Canvas — by Kashika</title>
+<title>Bloom & Resin | Resin Art • Canvas Paintings • Floral Keepsakes</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -24,7 +24,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);
 .hero-petals{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
 .petal{position:absolute;border-radius:50% 0 50% 0;opacity:0.35;animation:floatPetal linear infinite;}
 @keyframes floatPetal{0%{transform:translateY(0) rotate(0deg);opacity:0.35;}50%{opacity:0.5;}100%{transform:translateY(-110vh) rotate(360deg);opacity:0;}}
-.hero-badge{display:inline-block;background:white;border:1.5px solid var(--rose);color:var(--rose-deep);font-size:0.75rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;padding:0.4rem 1.2rem;border-radius:100px;margin-bottom:1.5rem;animation:fadeDown 0.6s ease both;}
+.hero-tagline{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0.6rem 1.4rem;margin-top:1.3rem;padding:0.65rem 1.5rem;border:1px solid rgba(107,76,76,0.18);border-radius:100px;animation:fadeDown 0.7s 0.15s ease both;}
+.tag-item{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.85rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark);}
+.tag-item::before{content:'';width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.tag-resin::before{background:var(--rose-deep);}
+.tag-canvas::before{background:var(--mint-deep);}
+.tag-floral::before{background:var(--amber-deep);}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,10vw,6rem);line-height:1.05;color:var(--dark);animation:fadeDown 0.7s 0.1s ease both;}
 .hero h1 em{font-style:italic;color:var(--rose-deep);}
 .hero-sub{font-size:1.05rem;color:var(--mid);margin-top:1rem;font-weight:300;max-width:440px;line-height:1.7;animation:fadeDown 0.7s 0.2s ease both;}
@@ -147,7 +152,7 @@ footer a{color:var(--rose);text-decoration:none;}
 .modal-wa-btn{display:flex;align-items:center;justify-content:center;gap:0.5rem;background:var(--wa);color:white;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;padding:0.9rem;border-radius:100px;text-decoration:none;border:none;cursor:pointer;width:100%;transition:opacity 0.2s;}
 .modal-wa-btn:hover{opacity:0.88;}
 
-@media(max-width:640px){.nav-links{display:none;}.hero h1{font-size:2.8rem;}.product-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));}}
+@media(max-width:640px){.nav-links{display:none;}.hero h1{font-size:2.8rem;}.hero-tagline{gap:0.5rem 1rem;padding:0.6rem 1.1rem;border-radius:16px;}.tag-item{font-size:0.68rem;letter-spacing:0.04em;}.tag-item::before{width:7px;height:7px;}.product-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));}}
 </style>
 </head>
 <body>
@@ -157,12 +162,12 @@ footer a{color:var(--rose);text-decoration:none;}
 </a>
 
 <nav>
-  <a class="nav-logo" href="#">✿ Bloom, Resin & Canvas</a>
+  <a class="nav-logo" href="#">✿ Bloom & Resin</a>
   <ul class="nav-links">
     <li><a href="#collection">Collection</a></li>
     <li><a href="#story">Our Story</a></li>
     <li><a href="#custom">Custom Orders</a></li>
-    <li><a class="nav-wa" href="https://wa.me/917289889366?text=Hi%20Kashika!%20I%27d%20love%20to%20order%20from%20Bloom%2C%20Resin%20%26%20Canvas%20%F0%9F%8C%B8" target="_blank">
+    <li><a class="nav-wa" href="https://wa.me/917289889366?text=Hi%20Kashika!%20I%27d%20love%20to%20order%20from%20Bloom%20%26%20Resin%20%F0%9F%8C%B8" target="_blank">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.554 4.103 1.524 5.836L.057 23.882a.5.5 0 00.611.61l6.047-1.467A11.95 11.95 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 21.818a9.83 9.83 0 01-5.006-1.369l-.358-.214-3.718.902.938-3.618-.234-.372A9.817 9.817 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
       WhatsApp
     </a></li>
@@ -171,13 +176,17 @@ footer a{color:var(--rose);text-decoration:none;}
 
 <div class="hero">
   <div class="hero-petals" id="petals"></div>
-  <div class="hero-badge">✦ Handcrafted Resin Art & Acrylic Paintings ✦</div>
-  <h1>Bloom, Resin <em>&</em> Canvas</h1>
-  <p class="hero-sub">Real flowers preserved forever in crystal-clear resin, and bold abstract acrylic paintings made by hand — each piece one-of-a-kind, made with love.</p>
+  <h1>Bloom <em>&</em> Resin</h1>
+  <div class="hero-tagline">
+    <span class="tag-item tag-resin">Resin Art</span>
+    <span class="tag-item tag-canvas">Canvas Paintings</span>
+    <span class="tag-item tag-floral">Floral Keepsakes</span>
+  </div>
+  <p class="hero-sub">Real flowers preserved forever in crystal-clear resin, and bold abstract acrylic paintings hand-painted on canvas — each piece one-of-a-kind, made with love.</p>
   <p class="hero-by">— by Kashika</p>
   <div class="hero-cta">
     <a class="btn-primary" href="#collection">Shop Collection</a>
-    <a class="btn-wa" href="https://wa.me/917289889366?text=Hi%20Kashika!%20I%20saw%20your%20Bloom%2C%20Resin%20%26%20Canvas%20collection%20%F0%9F%8C%B8" target="_blank">
+    <a class="btn-wa" href="https://wa.me/917289889366?text=Hi%20Kashika!%20I%20saw%20your%20Bloom%20%26%20Resin%20collection%20%F0%9F%8C%B8" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.554 4.103 1.524 5.836L.057 23.882a.5.5 0 00.611.61l6.047-1.467A11.95 11.95 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 21.818a9.83 9.83 0 01-5.006-1.369l-.358-.214-3.718.902.938-3.618-.234-.372A9.817 9.817 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
       Order on WhatsApp
     </a>
@@ -190,7 +199,7 @@ footer a{color:var(--rose);text-decoration:none;}
 
 <section class="why-section">
   <div style="text-align:center;margin-bottom:3rem;">
-    <p class="section-label">Why Bloom, Resin & Canvas</p>
+    <p class="section-label">Why Bloom & Resin</p>
     <h2 class="section-title">Made to last, made by hand</h2>
   </div>
   <div class="why-grid">
@@ -274,7 +283,7 @@ footer a{color:var(--rose);text-decoration:none;}
   <div class="story-inner reveal">
     <p class="section-label" style="text-align:center;">Our Story</p>
     <h2 class="section-title" style="text-align:center;margin-bottom:2rem;">A flower picked. A canvas filled. A memory kept.</h2>
-    <p>I'm <strong>Kashika</strong>, and I started Bloom, Resin & Canvas because I believe the most beautiful things in life deserve to last forever. A flower blooms for days — but the feeling it gives you? That should never fade.</p>
+    <p>I'm <strong>Kashika</strong>, and I started Bloom & Resin because I believe the most beautiful things in life deserve to last forever. A flower blooms for days — but the feeling it gives you? That should never fade.</p>
     <p>Every resin piece I make begins with a <strong>real, living flower</strong> — pressed by hand, arranged with care, and sealed in crystal-clear resin so it stays just as beautiful as the day it was picked. Alongside that, I hand-paint <strong>original acrylic canvases</strong> — bold, abstract, and made to bring colour and life into your space.</p>
     <p>No moulds. No duplicates. No prints. Every earring, every tray, every painting is <strong>entirely one of a kind</strong> — because that's what you deserve.</p>
     <div style="margin-top:2.5rem;">
@@ -303,7 +312,7 @@ footer a{color:var(--rose);text-decoration:none;}
 </section>
 
 <footer>
-  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:0.5rem;">✿ Bloom, Resin & Canvas</p>
+  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:0.5rem;">✿ Bloom & Resin</p>
   <p>Handcrafted resin art & acrylic paintings by Kashika</p>
   <p style="margin-top:0.5rem;">WhatsApp: <a href="https://wa.me/917289889366">7289889366</a></p>
   <p style="margin-top:1rem;font-size:0.72rem;opacity:0.4;">Every piece is one-of-a-kind, made to order with love.</p>
@@ -374,7 +383,7 @@ const products=[
 const WA_SVG=`<svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.554 4.103 1.524 5.836L.057 23.882a.5.5 0 00.611.61l6.047-1.467A11.95 11.95 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 21.818a9.83 9.83 0 01-5.006-1.369l-.358-.214-3.718.902.938-3.618-.234-.372A9.817 9.817 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>`;
 
 function waLink(name,price){
-  const msg=encodeURIComponent(`Hi Kashika! 🌸 I'd love to order the *${name}* (${price}) from Bloom, Resin & Canvas. Could you please let me know about availability and delivery?\n\n🛍️ Browse more products here: https://bloomandresin.com`);
+  const msg=encodeURIComponent(`Hi Kashika! 🌸 I'd love to order the *${name}* (${price}) from Bloom & Resin. Could you please let me know about availability and delivery?\n\n🛍️ Browse more products here: https://bloomandresin.com`);
   return `https://wa.me/${WA}?text=${msg}`;
 }
 
